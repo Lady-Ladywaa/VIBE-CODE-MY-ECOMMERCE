@@ -1,0 +1,1002 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Wa-Vibe Fashion | แฟชั่นมุสลิม ซื้อและเช่า</title>
+  <meta name="description" content="Wa-Vibe Fashion — ร้านจำหน่ายและให้เช่าเสื้อผ้าแฟชั่นมุสลิม ชุดเดรส ฮิญาบ เครื่องประดับ" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&family=Noto+Sans+Thai:wght@300;400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <!-- Announcement Bar -->
+  <div class="announcement-bar">
+    <p><i class="fas fa-truck"></i> จัดส่งฟรีเมื่อซื้อสินค้าครบ 1,500 บาท &nbsp;|&nbsp; <i class="fas fa-tag"></i> โปรโมชั่นเช่าชุดรายอ ลด 20%</p>
+  </div>
+
+  <!-- Header -->
+  <header class="header" id="header">
+    <div class="container header-inner">
+      <button class="mobile-menu-btn" id="mobileMenuBtn" aria-label="Open menu">
+        <i class="fas fa-bars"></i>
+      </button>
+
+      <a href="index.html" class="logo">
+        <span class="logo-icon"><i class="fas fa-vest"></i></span>
+        <span class="logo-text">Wa-Vibe <span class="logo-accent">Fashion</span></span>
+      </a>
+
+      <nav class="main-nav" id="mainNav">
+        <a href="#home" class="nav-link active">หน้าแรก</a>
+        <a href="#products" class="nav-link">สินค้า</a>
+        <a href="#services" class="nav-link">บริการ</a>
+        <a href="#how-to-rent" class="nav-link">วิธีการเช่า</a>
+        <a href="#contact" class="nav-link">ติดต่อเรา</a>
+      </nav>
+
+      <div class="header-actions">
+        <button class="icon-btn search-toggle" id="searchToggle" aria-label="Search">
+          <i class="fas fa-search"></i>
+        </button>
+        <button class="icon-btn" id="wishlistBtn" aria-label="Wishlist">
+          <i class="far fa-heart"></i>
+          <span class="badge" id="wishlistBadge">0</span>
+        </button>
+        <button class="icon-btn" id="cartBtn" aria-label="Cart">
+          <i class="fas fa-shopping-bag"></i>
+          <span class="badge" id="cartBadge">0</span>
+        </button>
+        <button class="icon-btn" id="userBtn" aria-label="Account">
+          <i class="far fa-user"></i>
+        </button>
+      </div>
+    </div>
+
+    <!-- Search Overlay -->
+    <div class="search-overlay" id="searchOverlay">
+      <div class="container search-bar">
+        <i class="fas fa-search search-icon"></i>
+        <input type="text" id="searchInput" placeholder="ค้นหาสินค้า เช่น ชุดเดรส ฮิญาบ..." autocomplete="off" />
+        <button class="search-close" id="searchClose"><i class="fas fa-times"></i></button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Nav Drawer -->
+  <div class="mobile-nav-overlay" id="mobileNavOverlay"></div>
+  <aside class="mobile-nav" id="mobileNav">
+    <div class="mobile-nav-header">
+      <span class="logo-text">Wa-Vibe <span class="logo-accent">Fashion</span></span>
+      <button class="icon-btn" id="mobileNavClose"><i class="fas fa-times"></i></button>
+    </div>
+    <nav class="mobile-nav-links">
+      <a href="#home" class="mobile-link active">หน้าแรก</a>
+      <a href="#products" class="mobile-link">สินค้า</a>
+      <a href="#services" class="mobile-link">บริการ</a>
+      <a href="#how-to-rent" class="mobile-link">วิธีการเช่า</a>
+      <a href="#contact" class="mobile-link">ติดต่อเรา</a>
+    </nav>
+    <div class="mobile-nav-footer">
+      <a href="#" class="mobile-social"><i class="fab fa-line"></i></a>
+      <a href="#" class="mobile-social"><i class="fab fa-instagram"></i></a>
+      <a href="#" class="mobile-social"><i class="fab fa-facebook"></i></a>
+    </div>
+  </aside>
+
+  <main>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+      <div class="hero-slider">
+        <div class="hero-slide active" style="background: linear-gradient(135deg, #d4a574 0%, #c4956a 50%, #b8866e 100%);">
+          <div class="container hero-content">
+            <span class="hero-tag">คอลเลกชันใหม่ 2026</span>
+            <h1 class="hero-title">สวมใส่ความงดงาม<br/><span class="highlight">แห่งศรัทธา</span></h1>
+            <p class="hero-subtitle">แฟชั่นมุสลิมที่ออกแบบมาเพื่อคุณ — ทั้งซื้อและเช่า</p>
+            <div class="hero-actions">
+              <a href="#products" class="btn btn-primary">ช็อปเลย</a>
+              <a href="#how-to-rent" class="btn btn-outline-light">วิธีการเช่า</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide" style="background: linear-gradient(135deg, #7a9e7e 0%, #6b8f70 50%, #5a7d5e 100%);">
+          <div class="container hero-content">
+            <span class="hero-tag">เช่าเริ่มต้น 299 บาท</span>
+            <h1 class="hero-title">ชุดรายอ<br/><span class="highlight">ประหยัดกว่า ให้เช่า</span></h1>
+            <p class="hero-subtitle">เช่าชุดสวยได้ในราคาเบาๆ คืนเงินมัดจำหลังตรวจสอบสินค้า</p>
+            <div class="hero-actions">
+              <a href="#products" class="btn btn-primary">ดูสินค้าเช่า</a>
+              <a href="#how-to-rent" class="btn btn-outline-light">จองเลย</a>
+            </div>
+          </div>
+        </div>
+        <div class="hero-slide" style="background: linear-gradient(135deg, #9c7fb5 0%, #8a6fa3 50%, #7d6196 100%);">
+          <div class="container hero-content">
+            <span class="hero-tag">บริการเสริมครบวงจร</span>
+            <h1 class="hero-title">Complete Your<br/><span class="highlight">Perfect Look</span></h1>
+            <p class="hero-subtitle">บริการแต่งหน้า คลุมฮิญาบ และจัดส่งถึงที่</p>
+            <div class="hero-actions">
+              <a href="#services" class="btn btn-primary">ดูบริการ</a>
+              <a href="#contact" class="btn btn-outline-light">สอบถาม</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="hero-dots">
+        <button class="dot active" data-slide="0"></button>
+        <button class="dot" data-slide="1"></button>
+        <button class="dot" data-slide="2"></button>
+      </div>
+      <button class="hero-arrow hero-prev" id="heroPrev"><i class="fas fa-chevron-left"></i></button>
+      <button class="hero-arrow hero-next" id="heroNext"><i class="fas fa-chevron-right"></i></button>
+    </section>
+
+    <!-- Features Strip -->
+    <section class="features-strip">
+      <div class="container features-grid">
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-shield-alt"></i></div>
+          <div class="feature-text">
+            <strong>คืนเงินมัดจำ</strong>
+            <span>ตรวจสอบสินค้าก่อนคืนเงิน</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-calendar-check"></i></div>
+          <div class="feature-text">
+            <strong>จองวันเช่า</strong>
+            <span>เลือกวันที่ต้องการได้เลย</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-truck"></i></div>
+          <div class="feature-text">
+            <strong>จัดส่งทั่วประเทศ</strong>
+            <span>ฟรี! เมื่อซื้อครบ 1,500 บาท</span>
+          </div>
+        </div>
+        <div class="feature-item">
+          <div class="feature-icon"><i class="fas fa-headset"></i></div>
+          <div class="feature-text">
+            <strong>บริการหลังการขาย</strong>
+            <span>Line OA พร้อมให้คำปรึกษา</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Categories -->
+    <section class="categories" id="categories">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">หมวดหมู่</span>
+          <h2 class="section-title">เลือกสไตล์ของคุณ</h2>
+          <p class="section-desc">ค้นหาสินค้าที่ใช่สำหรับทุกโอกาส</p>
+        </div>
+        <div class="categories-grid">
+          <a href="#products" class="category-card" data-category="dresses">
+            <div class="category-img" style="background: linear-gradient(135deg, #f5e6d3, #e8d5c4);">
+              <i class="fas fa-vest"></i>
+            </div>
+            <h3>ชุดเดรส</h3>
+            <span>42 รายการ</span>
+          </a>
+          <a href="#products" class="category-card" data-category="hijab">
+            <div class="category-img" style="background: linear-gradient(135deg, #e6f0e8, #d4e4d7);">
+              <i class="fas fa-head-side-coverage"></i>
+            </div>
+            <h3>ผ้าคลุมฮิญาบ</h3>
+            <span>35 รายการ</span>
+          </a>
+          <a href="#products" class="category-card" data-category="accessories">
+            <div class="category-img" style="background: linear-gradient(135deg, #f0e6f5, #e0d4ec);">
+              <i class="fas fa-gem"></i>
+            </div>
+            <h3>เครื่องประดับ</h3>
+            <span>28 รายการ</span>
+          </a>
+          <a href="#products" class="category-card" data-category="bags">
+            <div class="category-img" style="background: linear-gradient(135deg, #fce4ec, #f8d0dc);">
+              <i class="fas fa-shopping-bag"></i>
+            </div>
+            <h3>กระเป๋า</h3>
+            <span>20 รายการ</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Products Section -->
+    <section class="products-section" id="products">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">สินค้าแนะนำ</span>
+          <h2 class="section-title">สินค้ายอดนิยม</h2>
+          <p class="section-desc">คัดสรรมาเพื่อคุณ — ทั้งซื้อและเช่า</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="filter-tab active" data-filter="all">ทั้งหมด</button>
+          <button class="filter-tab" data-filter="sale">ซื้อขาด</button>
+          <button class="filter-tab" data-filter="rental">เช่า</button>
+          <button class="filter-tab" data-filter="dresses">ชุดเดรส</button>
+          <button class="filter-tab" data-filter="hijab">ฮิญาบ</button>
+          <button class="filter-tab" data-filter="accessories">เครื่องประดับ</button>
+        </div>
+
+        <!-- Sort Bar -->
+        <div class="sort-bar">
+          <span class="result-count">แสดง <strong>12</strong> สินค้า</span>
+          <div class="sort-select">
+            <label for="sortBy">เรียงตาม:</label>
+            <select id="sortBy">
+              <option value="popular">ยอดนิยม</option>
+              <option value="newest">ใหม่ล่าสุด</option>
+              <option value="price-low">ราคาต่ำ → สูง</option>
+              <option value="price-high">ราคาสูง → ต่ำ</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Product Grid -->
+        <div class="products-grid" id="productsGrid">
+          <!-- Product Card 1 -->
+          <div class="product-card" data-type="sale" data-category="dresses" data-price="1290">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #f5e6d3, #e8d5c4);">
+                <i class="fas fa-vest product-placeholder-icon"></i>
+              </div>
+              <div class="product-badges">
+                <span class="badge-new">ใหม่</span>
+                <span class="badge-sale-flag"><i class="fas fa-tag"></i></span>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge sale">ซื้อขาด</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">ชุดเดรส</span>
+              <h3 class="product-name">เดรสยาวแขนยาว ลายดอกไม้</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(24)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">฿1,290</span>
+                <span class="price-original">฿1,590</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#d4a574;" title="น้ำตาล"></span>
+                <span class="color-dot" style="background:#7a9e7e;" title="เขียว"></span>
+                <span class="color-dot" style="background:#9c7fb5;" title="ม่วง"></span>
+              </div>
+              <button class="btn btn-add-cart" data-id="1"><i class="fas fa-shopping-bag"></i> เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+
+          <!-- Product Card 2 -->
+          <div class="product-card" data-type="rental" data-category="dresses" data-price="399">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #e6f0e8, #d4e4d7);">
+                <i class="fas fa-vest product-placeholder-icon"></i>
+              </div>
+              <div class="product-badges">
+                <span class="badge-hot">ยอดนิยม</span>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge rental">เช่า</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">ชุดเดรส</span>
+              <h3 class="product-name">ชุดเดรสรายอ สีน้ำเงินกรม</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(42)</span>
+              </div>
+              <div class="product-prices-rental">
+                <div class="price-rental"><span class="price-label">เช่า</span><span class="price-current">฿399</span><span class="price-unit">/วัน</span></div>
+                <div class="price-deposit"><span class="price-label">มัดจำ</span><span class="price-deposit-val">฿500</span></div>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#2c3e6b;" title="น้ำเงิน"></span>
+                <span class="color-dot" style="background:#8b4557;" title="ชมพูเข้ม"></span>
+              </div>
+              <button class="btn btn-rent" data-id="2"><i class="fas fa-calendar-check"></i> เลือกวันเช่า</button>
+            </div>
+          </div>
+
+          <!-- Product Card 3 -->
+          <div class="product-card" data-type="sale" data-category="hijab" data-price="390">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #f0e6f5, #e0d4ec);">
+                <i class="fas fa-head-side-coverage product-placeholder-icon"></i>
+              </div>
+              <div class="product-badges">
+                <span class="badge-new">ใหม่</span>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge sale">ซื้อขาด</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">ผ้าคลุมฮิญาบ</span>
+              <h3 class="product-name">ฮิญาบสำเร็จรูป ผ้าชีฟอง</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(18)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">฿390</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#f5e6d3;" title="ครีม"></span>
+                <span class="color-dot" style="background:#2c2c2c;" title="ดำ"></span>
+                <span class="color-dot" style="background:#d4a574;" title="น้ำตาล"></span>
+                <span class="color-dot" style="background:#ffffff; border:1px solid #ddd;" title="ขาว"></span>
+              </div>
+              <button class="btn btn-add-cart" data-id="3"><i class="fas fa-shopping-bag"></i> เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+
+          <!-- Product Card 4 -->
+          <div class="product-card" data-type="sale" data-category="accessories" data-price="590">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #fce4ec, #f8d0dc);">
+                <i class="fas fa-gem product-placeholder-icon"></i>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge sale">ซื้อขาด</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">เครื่องประดับ</span>
+              <h3 class="product-name">เข็มกลัดหัวใจ ประดับเพชร</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <span>(36)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">฿590</span>
+              </div>
+              <button class="btn btn-add-cart" data-id="4"><i class="fas fa-shopping-bag"></i> เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+
+          <!-- Product Card 5 -->
+          <div class="product-card" data-type="rental" data-category="dresses" data-price="499">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #fce4ec, #f0c4d4);">
+                <i class="fas fa-vest product-placeholder-icon"></i>
+              </div>
+              <div class="product-badges">
+                <span class="badge-hot">แนะนำ</span>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge rental">เช่า</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">ชุดเดรส</span>
+              <h3 class="product-name">ชุดราตรีลูกไม้ งานแต่ง</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(31)</span>
+              </div>
+              <div class="product-prices-rental">
+                <div class="price-rental"><span class="price-label">เช่า</span><span class="price-current">฿499</span><span class="price-unit">/วัน</span></div>
+                <div class="price-deposit"><span class="price-label">มัดจำ</span><span class="price-deposit-val">฿800</span></div>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#e8b4b8;" title="ชมพู"></span>
+                <span class="color-dot" style="background:#d4a574;" title="น้ำตาล"></span>
+                <span class="color-dot" style="background:#7a9e7e;" title="เขียว"></span>
+              </div>
+              <button class="btn btn-rent" data-id="5"><i class="fas fa-calendar-check"></i> เลือกวันเช่า</button>
+            </div>
+          </div>
+
+          <!-- Product Card 6 -->
+          <div class="product-card" data-type="sale" data-category="hijab" data-price="290">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #e6f0e8, #c4dcc8);">
+                <i class="fas fa-head-side-coverage product-placeholder-icon"></i>
+              </div>
+              <div class="product-badges">
+                <span class="badge-sale">-20%</span>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge sale">ซื้อขาด</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">ผ้าคลุมฮิญาบ</span>
+              <h3 class="product-name">ผ้าคลุมสแครชเนื้อนุ่ม</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(15)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">฿290</span>
+                <span class="price-original">฿360</span>
+              </div>
+              <div class="product-colors">
+                <span class="color-dot" style="background:#f5e6d3;" title="ครีม"></span>
+                <span class="color-dot" style="background:#7a9e7e;" title="เขียว"></span>
+                <span class="color-dot" style="background:#9c7fb5;" title="ม่วง"></span>
+              </div>
+              <button class="btn btn-add-cart" data-id="6"><i class="fas fa-shopping-bag"></i> เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+
+          <!-- Product Card 7 -->
+          <div class="product-card" data-type="rental" data-category="dresses" data-price="350">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #f5e6d3, #e0c8a8);">
+                <i class="fas fa-vest product-placeholder-icon"></i>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge rental">เช่า</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">ชุดเดรส</span>
+              <h3 class="product-name">ชุดอามีร่า สีน้ำผึ้ง</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="far fa-star"></i>
+                <span>(12)</span>
+              </div>
+              <div class="product-prices-rental">
+                <div class="price-rental"><span class="price-label">เช่า</span><span class="price-current">฿350</span><span class="price-unit">/วัน</span></div>
+                <div class="price-deposit"><span class="price-label">มัดจำ</span><span class="price-deposit-val">฿400</span></div>
+              </div>
+              <button class="btn btn-rent" data-id="7"><i class="fas fa-calendar-check"></i> เลือกวันเช่า</button>
+            </div>
+          </div>
+
+          <!-- Product Card 8 -->
+          <div class="product-card" data-type="sale" data-category="accessories" data-price="450">
+            <div class="product-img-wrap">
+              <div class="product-img" style="background: linear-gradient(135deg, #fce4ec, #f5d5de);">
+                <i class="fas fa-ring product-placeholder-icon"></i>
+              </div>
+              <div class="product-actions-overlay">
+                <button class="action-btn" aria-label="Add to wishlist"><i class="far fa-heart"></i></button>
+                <button class="action-btn" aria-label="Quick view"><i class="far fa-eye"></i></button>
+              </div>
+              <span class="product-type-badge sale">ซื้อขาด</span>
+            </div>
+            <div class="product-info">
+              <span class="product-category">เครื่องประดับ</span>
+              <h3 class="product-name">ต่างหูมุก ดีไซน์หรู</h3>
+              <div class="product-rating">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star-half-alt"></i>
+                <span>(22)</span>
+              </div>
+              <div class="product-price">
+                <span class="price-current">฿450</span>
+              </div>
+              <button class="btn btn-add-cart" data-id="8"><i class="fas fa-shopping-bag"></i> เพิ่มลงตะกร้า</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="products-more">
+          <a href="#" class="btn btn-outline">ดูสินค้าทั้งหมด <i class="fas fa-arrow-right"></i></a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Promo Banner -->
+    <section class="promo-banner">
+      <div class="container">
+        <div class="promo-card">
+          <div class="promo-content">
+            <span class="promo-tag">โปรโมชั่นพิเศษ</span>
+            <h2 class="promo-title">เช่าชุดรายอ<br/>ลดสูงสุด <span class="promo-highlight">20%</span></h2>
+            <p class="promo-desc">จองล่วงหน้า 7 วัน รับส่วนลดเพิ่ม! พร้อมบริการจัดส่งและรับคืนถึงที่</p>
+            <a href="#products" class="btn btn-primary">จองตอนนี้</a>
+          </div>
+          <div class="promo-visual">
+            <div class="promo-circle">
+              <i class="fas fa-calendar-alt"></i>
+              <span class="promo-discount">-20%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- How To Rent -->
+    <section class="how-to-rent" id="how-to-rent">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ง่ายๆ แค่ 4 ขั้นตอน</span>
+          <h2 class="section-title">วิธีการเช่าสินค้า</h2>
+          <p class="section-desc">เช่าชุดสวยได้ง่ายๆ ไม่ยุ่งยาก</p>
+        </div>
+        <div class="steps-grid">
+          <div class="step-card">
+            <div class="step-number">1</div>
+            <div class="step-icon"><i class="fas fa-search"></i></div>
+            <h3>เลือกสินค้า</h3>
+            <p>เลือกชุดที่ถูกใจจากแคตตาล็อกของเรา กดปุ่ม "เลือกวันเช่า"</p>
+          </div>
+          <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="step-card">
+            <div class="step-number">2</div>
+            <div class="step-icon"><i class="fas fa-calendar-check"></i></div>
+            <h3>เลือกวันเช่า</h3>
+            <p>เลือกวันที่ต้องการเช่าและวันคืน ระบบจะตรวจสอบคิวอัตโนมัติ</p>
+          </div>
+          <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="step-card">
+            <div class="step-number">3</div>
+            <div class="step-icon"><i class="fas fa-credit-card"></i></div>
+            <h3>ชำระเงิน</h3>
+            <p>จ่ายค่าเช่าและเงินมัดจำ ผ่าน QR Code หรือโอนธนาคาร</p>
+          </div>
+          <div class="step-connector"><i class="fas fa-arrow-right"></i></div>
+          <div class="step-card">
+            <div class="step-number">4</div>
+            <div class="step-icon"><i class="fas fa-box-open"></i></div>
+            <h3>รับและคืนสินค้า</h3>
+            <p>รับสินค้าจัดส่งถึงบ้าน ใช้เสร็จคืน我们将ตรวจสอบก่อนคืนเงินมัดจำ</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section class="services-section" id="services">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">บริการเสริม</span>
+          <h2 class="section-title">Complete Your Look</h2>
+          <p class="section-desc">บริการครบวงจร เพื่อลุคที่สมบูรณ์แบบ</p>
+        </div>
+        <div class="services-grid">
+          <div class="service-card">
+            <div class="service-icon" style="background: linear-gradient(135deg, #d4a574, #c4956a);">
+              <i class="fas fa-paint-brush"></i>
+            </div>
+            <h3>Makeup Service</h3>
+            <p>บริการแต่งหน้าโดยช่างมืออาชีพ เหมาะสำหรับงานแต่ง งานรายอ และโอกาสพิเศษ</p>
+            <div class="service-price">
+              <span class="price-label">เริ่มต้น</span>
+              <span class="price-val">฿1,500</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-sm">จองบริการ</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon" style="background: linear-gradient(135deg, #7a9e7e, #6b8f70);">
+              <i class="fas fa-head-side-coverage"></i>
+            </div>
+            <h3>Hijab Styling</h3>
+            <p>บริการจัดผ้าคลุมฮิญาบ ให้สวยงามเข้ากับชุด มีหลายสไตล์ให้เลือก</p>
+            <div class="service-price">
+              <span class="price-label">เริ่มต้น</span>
+              <span class="price-val">฿500</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-sm">จองบริการ</a>
+          </div>
+          <div class="service-card">
+            <div class="service-icon" style="background: linear-gradient(135deg, #9c7fb5, #8a6fa3);">
+              <i class="fas fa-truck"></i>
+            </div>
+            <h3>Delivery Service</h3>
+            <p>บริการจัดส่งถึงที่ทั่วประเทศ พร้อมบริการรับสินค้าคืนถึงบ้าน</p>
+            <div class="service-price">
+              <span class="price-label">เริ่มต้น</span>
+              <span class="price-val">฿80</span>
+            </div>
+            <a href="#contact" class="btn btn-outline btn-sm">จองบริการ</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">รีวิวจากลูกค้า</span>
+          <h2 class="section-title">ลูกค้าของเราพูดว่าอะไร</h2>
+        </div>
+        <div class="testimonials-grid">
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"เช่าชุดรายอไปงานแต่ง สวยมากกก คุ้มค่าสุดๆ ไม่ต้องซื้อชุดแพงๆ แล้วเก็บไว้ไม่ได้ใช้ แนะนำเลยค่ะ!"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:#d4a574;">N</div>
+              <div class="author-info">
+                <strong>นัทยา Ahmad</strong>
+                <span>เช่าชุดเดรส</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i>
+            </div>
+            <p class="testimonial-text">"สินค้าคุณภาพดี ตรงปก บริการหลังการขายดีมาก คืนเงินมัดจำรวดเร็ว ประทับใจค่ะ จะเช่าอีกแน่นอน"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:#7a9e7e;">S</div>
+              <div class="author-info">
+                <strong>ซัยนับ รามلي</strong>
+                <span>เช่าชุดราตรี</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-stars">
+              <i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star"></i><i class="fas fa-star-half-alt"></i>
+            </div>
+            <p class="testimonial-text">"สั่งซื้อฮิญาบผ่านเว็บ ส่งไว ผ้าเนื้อดี ราคาไม่แพง มีโปรโมชั่นเรื่อยๆ ถูกใจมากค่ะ"</p>
+            <div class="testimonial-author">
+              <div class="author-avatar" style="background:#9c7fb5;">F</div>
+              <div class="author-info">
+                <strongฟาติมาห์ ดอเลาะ</strong>
+                <span>ซื้อฮิญาบ</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section class="contact-section" id="contact">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">ติดต่อเรา</span>
+          <h2 class="section-title">มีคำถาม? ทักมาได้เลย</h2>
+        </div>
+        <div class="contact-grid">
+          <div class="contact-form-wrap">
+            <form class="contact-form" id="contactForm">
+              <div class="form-row">
+                <div class="form-group">
+                  <label for="contactName">ชื่อ</label>
+                  <input type="text" id="contactName" placeholder="กรอกชื่อของคุณ" required />
+                </div>
+                <div class="form-group">
+                  <label for="contactEmail">อีเมล</label>
+                  <input type="email" id="contactEmail" placeholder="example@email.com" required />
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="contactSubject">หัวข้อ</label>
+                <select id="contactSubject" required>
+                  <option value="">เลือกหัวข้อ</option>
+                  <option value="purchase">สอบถามการสั่งซื้อ</option>
+                  <option value="rental">สอบถามการเช่า</option>
+                  <option value="service">จองบริการเสริม</option>
+                  <option value="complaint">ร้องเรียน/ติชม</option>
+                  <option value="other">อื่นๆ</option>
+                </select>
+              </div>
+              <div class="form-group">
+                <label for="contactMessage">ข้อความ</label>
+                <textarea id="contactMessage" rows="5" placeholder="พิมพ์ข้อความของคุณ..." required></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary">ส่งข้อความ <i class="fas fa-paper-plane"></i></button>
+            </form>
+          </div>
+          <div class="contact-info">
+            <div class="info-card">
+              <div class="info-icon"><i class="fab fa-line"></i></div>
+              <div class="info-text">
+                <strong>Line Official</strong>
+                <span>@wavibe-fashion</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-phone"></i></div>
+              <div class="info-text">
+                <strong>โทรศัพท์</strong>
+                <span>09X-XXX-XXXX</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fas fa-envelope"></i></div>
+              <div class="info-text">
+                <strong>อีเมล</strong>
+                <span>hello@wavibe-fashion.com</span>
+              </div>
+            </div>
+            <div class="info-card">
+              <div class="info-icon"><i class="fab fa-instagram"></i></div>
+              <div class="info-text">
+                <strong>Instagram</strong>
+                <span>@wavibe.fashion</span>
+              </div>
+            </div>
+            <div class="social-links">
+              <a href="#" class="social-btn" aria-label="Line"><i class="fab fa-line"></i></a>
+              <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+              <a href="#" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <span class="logo-icon"><i class="fas fa-vest"></i></span>
+            <span class="logo-text">Wa-Vibe <span class="logo-accent">Fashion</span></span>
+          </a>
+          <p class="footer-desc">แฟชั่นมุสลิม ซื้อและเช่า — ให้ทุกคนเข้าถึงความงดงามได้ในราคาที่คุ้มค่า</p>
+          <div class="social-links">
+            <a href="#" class="social-btn" aria-label="Line"><i class="fab fa-line"></i></a>
+            <a href="#" class="social-btn" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="#" class="social-btn" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-btn" aria-label="TikTok"><i class="fab fa-tiktok"></i></a>
+          </div>
+        </div>
+        <div class="footer-links">
+          <h4>ร้านค้า</h4>
+          <ul>
+            <li><a href="#products">สินค้าทั้งหมด</a></li>
+            <li><a href="#products">สินค้าซื้อขาด</a></li>
+            <li><a href="#products">สินค้าเช่า</a></li>
+            <li><a href="#services">บริการเสริม</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>ข้อมูล</h4>
+          <ul>
+            <li><a href="#how-to-rent">วิธีการเช่า</a></li>
+            <li><a href="#">วิธีชำระเงิน</a></li>
+            <li><a href="#">นโยบายคืนสินค้า</a></li>
+            <li><a href="#">ขนาดสินค้า</a></li>
+          </ul>
+        </div>
+        <div class="footer-links">
+          <h4>ติดต่อเรา</h4>
+          <ul>
+            <li><a href="#contact">แบบฟอร์มติดต่อ</a></li>
+            <li><a href="tel:09X-XXX-XXXX"><i class="fas fa-phone"></i> 09X-XXX-XXXX</a></li>
+            <li><a href="mailto:hello@wavibe-fashion.com"><i class="fas fa-envelope"></i> hello@wavibe-fashion.com</a></li>
+            <li><a href="#"><i class="fab fa-line"></i> @wavibe-fashion</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2026 Wa-Vibe Fashion. All rights reserved.</p>
+        <div class="footer-payments">
+          <span>ชำระเงินผ่าน</span>
+          <i class="fas fa-credit-card"></i>
+          <i class="fas fa-university"></i>
+          <i class="fab fa-qr-code"></i>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Back to Top -->
+  <button class="back-to-top" id="backToTop" aria-label="Back to top">
+    <i class="fas fa-chevron-up"></i>
+  </button>
+
+  <!-- Cart Sidebar -->
+  <div class="cart-overlay" id="cartOverlay"></div>
+  <aside class="cart-sidebar" id="cartSidebar">
+    <div class="cart-header">
+      <h3><i class="fas fa-shopping-bag"></i> ตะกร้าสินค้า</h3>
+      <button class="icon-btn" id="cartClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="cart-items" id="cartItems">
+      <div class="cart-empty">
+        <i class="fas fa-shopping-bag"></i>
+        <p>ตะกร้าว่างเปล่า</p>
+        <span>เลือกสินค้าที่ถูกใจได้เลย!</span>
+      </div>
+    </div>
+    <div class="cart-summary" id="cartSummary" style="display:none;">
+      <div class="cart-summary-row">
+        <span>ยอดรวม</span>
+        <span id="cartSubtotal">฿0</span>
+      </div>
+      <div class="cart-summary-row">
+        <span>ค่าจัดส่ง</span>
+        <span id="cartShipping">฿0</span>
+      </div>
+      <div class="cart-summary-row total">
+        <span>รวมทั้งหมด</span>
+        <span id="cartTotal">฿0</span>
+      </div>
+      <button class="btn btn-primary btn-full">ชำระเงิน <i class="fas fa-arrow-right"></i></button>
+      <button class="btn btn-outline btn-full" id="continueShopping">เลือกซื้อสินค้าต่อ</button>
+    </div>
+  </aside>
+
+  <!-- User Modal -->
+  <div class="modal-overlay" id="userModalOverlay"></div>
+  <div class="modal" id="userModal">
+    <div class="modal-header">
+      <h3 id="modalTitle">เข้าสู่ระบบ</h3>
+      <button class="icon-btn modal-close" id="modalClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body">
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-tab="login">เข้าสู่ระบบ</button>
+        <button class="auth-tab" data-tab="register">สมัครสมาชิก</button>
+      </div>
+
+      <!-- Login Form -->
+      <form class="auth-form" id="loginForm">
+        <div class="form-group">
+          <label for="loginEmail">อีเมล</label>
+          <input type="email" id="loginEmail" placeholder="example@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="loginPassword">รหัสผ่าน</label>
+          <div class="input-password">
+            <input type="password" id="loginPassword" placeholder="กรอกรหัสผ่าน" required />
+            <button type="button" class="toggle-password"><i class="far fa-eye"></i></button>
+          </div>
+        </div>
+        <div class="form-options">
+          <label class="checkbox-label">
+            <input type="checkbox" /> จดจำฉัน
+          </label>
+          <a href="#" class="forgot-link">ลืมรหัสผ่าน?</a>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">เข้าสู่ระบบ</button>
+      </form>
+
+      <!-- Register Form -->
+      <form class="auth-form" id="registerForm" style="display:none;">
+        <div class="form-group">
+          <label for="regName">ชื่อ-นามสกุล</label>
+          <input type="text" id="regName" placeholder="กรอกชื่อ-นามสกุล" required />
+        </div>
+        <div class="form-group">
+          <label for="regEmail">อีเมล</label>
+          <input type="email" id="regEmail" placeholder="example@email.com" required />
+        </div>
+        <div class="form-group">
+          <label for="regPhone">เบอร์โทรศัพท์</label>
+          <input type="tel" id="regPhone" placeholder="09X-XXX-XXXX" required />
+        </div>
+        <div class="form-group">
+          <label for="regPassword">รหัสผ่าน</label>
+          <div class="input-password">
+            <input type="password" id="regPassword" placeholder="กรอกรหัสผ่าน (8 ตัวขึ้นไป)" required minlength="8" />
+            <button type="button" class="toggle-password"><i class="far fa-eye"></i></button>
+          </div>
+        </div>
+        <div class="form-group">
+          <label for="regConfirmPassword">ยืนยันรหัสผ่าน</label>
+          <div class="input-password">
+            <input type="password" id="regConfirmPassword" placeholder="กรอกรหัสผ่านอีกครั้ง" required />
+            <button type="button" class="toggle-password"><i class="far fa-eye"></i></button>
+          </div>
+        </div>
+        <div class="form-options">
+          <label class="checkbox-label">
+            <input type="checkbox" required /> ยอมรับ <a href="#">เงื่อนไขการใช้งาน</a>
+          </label>
+        </div>
+        <button type="submit" class="btn btn-primary btn-full">สมัครสมาชิก</button>
+      </form>
+
+      <div class="auth-divider">
+        <span>หรือ</span>
+      </div>
+      <div class="social-login">
+        <button class="btn btn-social google"><i class="fab fa-google"></i> Google</button>
+        <button class="btn btn-social facebook"><i class="fab fa-facebook-f"></i> Facebook</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Notification -->
+  <div class="toast-container" id="toastContainer"></div>
+
+  <!-- Quick View Modal -->
+  <div class="modal-overlay" id="quickViewOverlay"></div>
+  <div class="modal modal-lg" id="quickViewModal">
+    <div class="modal-header">
+      <h3>ดูสินค้า</h3>
+      <button class="icon-btn modal-close" id="quickViewClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body quick-view-body" id="quickViewBody">
+      <!-- Filled by JS -->
+    </div>
+  </div>
+
+  <!-- Rental Calendar Modal -->
+  <div class="modal-overlay" id="rentalModalOverlay"></div>
+  <div class="modal" id="rentalModal">
+    <div class="modal-header">
+      <h3>เลือกวันเช่า</h3>
+      <button class="icon-btn modal-close" id="rentalModalClose"><i class="fas fa-times"></i></button>
+    </div>
+    <div class="modal-body" id="rentalModalBody">
+      <div class="rental-product-name" id="rentalProductName"></div>
+      <div class="rental-date-pickers">
+        <div class="form-group">
+          <label for="rentalStart">วันที่เช่า</label>
+          <input type="date" id="rentalStart" />
+        </div>
+        <div class="form-group">
+          <label for="rentalEnd">วันที่คืน</label>
+          <input type="date" id="rentalEnd" />
+        </div>
+      </div>
+      <div class="rental-summary" id="rentalSummary" style="display:none;">
+        <div class="rental-summary-row"><span>จำนวนวัน</span><span id="rentalDays">0 วัน</span></div>
+        <div class="rental-summary-row"><span>ค่าเช่า</span><span id="rentalFee">฿0</span></div>
+        <div class="rental-summary-row"><span>เงินมัดจำ</span><span id="rentalDeposit">฿0</span></div>
+        <div class="rental-summary-row total"><span>รวมทั้งหมด</span><span id="rentalTotalAmount">฿0</span></div>
+      </div>
+      <button class="btn btn-primary btn-full" id="confirmRental" disabled>ยืนยันการเช่า</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
